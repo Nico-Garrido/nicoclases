@@ -39,10 +39,15 @@ export async function POST(req: Request) {
       "pending";
 
     // Upsert por mp_preapproval_id o por user_id (elige uno). Aquí: por mp_preapproval_id.
-    await supabaseAdmin
-      .from("subscriptions")
-      .update({ status: mappedStatus, plan_id: mappedStatus === "active" ? "monthly" : "free" })
-      .eq("mp_preapproval_id", preapprovalId);
+const newPlan = mappedStatus === "active" ? "monthly" : undefined;
+
+await supabaseAdmin
+  .from("subscriptions")
+  .update({
+    status: mappedStatus,
+    ...(newPlan ? { plan_id: newPlan } : {}),
+  })
+  .eq("mp_preapproval_id", preapprovalId);
 
     return NextResponse.json({ ok: true });
   } catch (e) {
