@@ -43,7 +43,7 @@ if (!res.ok) {
           Acceso completo a todos los recursos y clases.
         </p>
 
-        <p className="text-lg font-bold mt-3">$9.990 CLP / mes</p>
+        <p className="text-lg font-bold mt-3">$9.990 CLP / mes (test)</p>
 
         <button
           onClick={subscribeMonthly}
