@@ -4,11 +4,10 @@ import { supabaseAdmin } from "@/lib/supabaseAdmin";
 
 export async function GET(
   _req: Request,
-  ctx: { params: { id: string } }
+  ctx: { params: Promise<{ id: string }> }
 ) {
-  // ✅ Next 16: params puede venir como Promise
-  const p = await Promise.resolve(ctx.params);
-  const id = Array.isArray((p as any)?.id) ? (p as any).id[0] : (p as any)?.id;
+  const p = await ctx.params;
+  const id = p?.id;
   const resourceId = Number(id);
 
   if (!Number.isFinite(resourceId)) {
