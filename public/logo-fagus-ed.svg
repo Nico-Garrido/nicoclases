@@ -1,0 +1,32 @@
+<svg width="200" height="240" viewBox="0 0 200 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Leaf outer shape -->
+  <path d="M100 10 C60 10, 28 42, 28 85 C28 128, 60 160, 100 175 C140 160, 172 128, 172 85 C172 42, 140 10, 100 10Z"
+        stroke="#17365B" stroke-width="5" fill="none" stroke-linejoin="round"/>
+
+  <!-- Central stem -->
+  <line x1="100" y1="15" x2="100" y2="170" stroke="#17365B" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- Left veins -->
+  <path d="M100 50 C88 48, 58 52, 42 60" stroke="#17365B" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+  <path d="M100 72 C86 68, 54 70, 36 80" stroke="#17365B" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+  <path d="M100 94 C86 90, 52 92, 36 104" stroke="#17365B" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+  <path d="M100 116 C87 112, 56 116, 44 128" stroke="#17365B" stroke-width="3" stroke-linecap="round" fill="none"/>
+  <path d="M100 136 C90 132, 65 136, 58 146" stroke="#17365B" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+
+  <!-- Right veins (mirrored) -->
+  <path d="M100 50 C112 48, 142 52, 158 60" stroke="#17365B" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+  <path d="M100 72 C114 68, 146 70, 164 80" stroke="#17365B" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+  <path d="M100 94 C114 90, 148 92, 164 104" stroke="#17365B" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+  <path d="M100 116 C113 112, 144 116, 156 128" stroke="#17365B" stroke-width="3" stroke-linecap="round" fill="none"/>
+  <path d="M100 136 C110 132, 135 136, 142 146" stroke="#17365B" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+
+  <!-- Water drop at bottom -->
+  <path d="M100 176 C100 176, 90 188, 90 196 C90 202, 94.5 208, 100 208 C105.5 208, 110 202, 110 196 C110 188, 100 176, 100 176Z"
+        fill="#17365B"/>
+
+  <!-- FAGUS ED text -->
+  <text x="100" y="228" text-anchor="middle" font-family="Arial, Helvetica, sans-serif"
+        font-size="18" font-weight="800" fill="#17365B" letter-spacing="2">FAGUS</text>
+  <text x="148" y="228" text-anchor="start" font-family="Arial, Helvetica, sans-serif"
+        font-size="18" font-weight="300" fill="#17365B" letter-spacing="1"> ED</text>
+</svg>
